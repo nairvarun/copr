@@ -1,6 +1,3 @@
-import re
-
-
 def fib(a, b):
     s = 2
     c = 0

@@ -3,7 +3,6 @@
 
 int check_prime(long long int num)
 {
-    // long long int r = sqrt(num);
     long long int r = sqrt(num);
     for (long long int i = 2; i < r; ++i)
     {
