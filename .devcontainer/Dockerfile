@@ -12,7 +12,7 @@ RUN useradd --create-home --shell /bin/bash nv                                  
                 git                                                                            \
                 # nano                                                                           \
                 # vi                                                                             \
-                vim                                                                            \
+                # vim                                                                            \
                 # neovim                                                                         \
                 chezscheme                                                                     \
                 # chicken-bin                                                                    \
@@ -21,9 +21,9 @@ RUN useradd --create-home --shell /bin/bash nv                                  
                 python3                                                                        \
                 python3-pip                                                                    \
                 python3-venv                                                                   \
-                # nodejs                                                                         \
+                nodejs                                                                         \
                 # npm                                                                            \
-                # rustc                                                                          \
+                rustc                                                                          \
                 # default-jdk                                                                    \
                 # gnu-smalltalk                                                                  \
                 ghc                                                                            \
