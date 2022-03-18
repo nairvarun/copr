@@ -21,12 +21,12 @@ RUN useradd --create-home --shell /bin/bash nv                                  
                 python3                                                                        \
                 python3-pip                                                                    \
                 python3-venv                                                                   \
-                nodejs                                                                         \
+                # nodejs                                                                         \
                 # npm                                                                            \
-                rustc                                                                          \
+                # rustc                                                                          \
                 # default-jdk                                                                    \
                 # gnu-smalltalk                                                                  \
-                ghc                                                                            \
+                # ghc                                                                            \
                 # swi-prolog                                                                     \
                 # cowsay                                                                         \
                 sudo
