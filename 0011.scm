@@ -82,3 +82,5 @@
 (define (main)
   (format #t "~A\n" (max (max-up?) (max-right?) (max-right-diagonal?) (max-left-diagonal?))))
 
+(main)
+
