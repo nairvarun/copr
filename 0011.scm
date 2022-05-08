@@ -70,7 +70,7 @@
     (do ((i 0 (+ 1 i)))
         ((>= i 17))
         (do ((j 3 (+ 1 j)))
-            ((>= j 17))
+            ((>= j 20))
             (set! left-diagonal (* (list-ref (list-ref grid i) j)
                                    (list-ref (list-ref grid (+ i 1)) (- j 1))
                                    (list-ref (list-ref grid (+ i 2)) (- j 2))
