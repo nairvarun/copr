@@ -1,6 +1,6 @@
 (define (sum-of-divisors n)
   (define (go num sum)
-    (if (> num (sqrt n))
+    (if (>= num (sqrt n))
       sum
       (if (= 0 (modulo n num))
         (go (+ 1 num) (+ sum num (/ n num)))
@@ -18,15 +18,11 @@
     #t
     #f))
 
-(define (print-all-abundant)
-  (define (go n)
-    ;; all integers greater than 28123 can be written 
-    ;; as the sum of two abundant numbers
-    (if (>= n 28123)
-      #t
-      (begin
-        (if (abundant? n) (format #t "~A\n" n))
-        (go (+ 1 n)))))
-  (go 0))
+(define (get-abundant-till n)
+  (define (go inner-num all-nums)
+    (if (> inner-num n)
+      (filter abundant? all-nums)
+      (go (+ 1 inner-num)
+          (append all-nums (list inner-num)))))
+  (go 1 '()))
 
-(define (main))
