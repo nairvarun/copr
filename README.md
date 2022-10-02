@@ -1,2 +1,2 @@
-<img src="./copper-golem.webp" alt="u/Nouconcept" width="25%"/>
+<img src="./copper-golem.webp" alt="u/Nouconcept" width="50%"/>
 
