@@ -7,17 +7,14 @@
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
 
-        i = 0
-        for j in range(1,len(nums)):
-            # if nums[j] != nums[j-1]:
-            nums[i] = nums[0]
-            i += 1
-        nums[i] = nums[0]
-        # nums = [1, 2, 3, 4, 5, 6]
+        k = 1
+        for i in range(len(nums)-1):
+            if nums[i] != nums[i+1]:
+                nums[k] = nums[i+1]
+                k += 1
+                continue
+        return k
 
-        return i+1
-
-nums = [1, 1, 2, 2, 3, 3, 4, 4, 4, 5]
-print(nums)
+nums = [0,0,1,1,1,2,2,3,3,4]
 print(Solution.removeDuplicates(Solution, nums))
 print(nums)
